@@ -14,6 +14,7 @@
 		6B9E7C791E4FFFAC0023AB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9E7C771E4FFFAC0023AB36 /* LaunchScreen.storyboard */; };
 		6B9E7C841E4FFFAC0023AB36 /* NewTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C831E4FFFAC0023AB36 /* NewTodayTests.swift */; };
 		6B9E7C8F1E4FFFAC0023AB36 /* NewTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C8E1E4FFFAC0023AB36 /* NewTodayUITests.swift */; };
+		F54529C49DCB12FECE2DDC9F /* Pods_NewToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A3237DFB4C8F9F812FD282 /* Pods_NewToday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1688FE65555F696B625E3EA3 /* Pods-NewToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewToday/Pods-NewToday.release.xcconfig"; sourceTree = "<group>"; };
+		47A3237DFB4C8F9F812FD282 /* Pods_NewToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9E7C6B1E4FFFAC0023AB36 /* NewToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9E7C6E1E4FFFAC0023AB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B9E7C701E4FFFAC0023AB36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		6B9E7C8A1E4FFFAC0023AB36 /* NewTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9E7C8E1E4FFFAC0023AB36 /* NewTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodayUITests.swift; sourceTree = "<group>"; };
 		6B9E7C901E4FFFAC0023AB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA6B0AA1C3D06E5DF3B1794 /* Pods-NewToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewToday/Pods-NewToday.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54529C49DCB12FECE2DDC9F /* Pods_NewToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F03A12978D8BFB58036ABDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A3237DFB4C8F9F812FD282 /* Pods_NewToday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B9E7C621E4FFFAC0023AB36 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				6B9E7C821E4FFFAC0023AB36 /* NewTodayTests */,
 				6B9E7C8D1E4FFFAC0023AB36 /* NewTodayUITests */,
 				6B9E7C6C1E4FFFAC0023AB36 /* Products */,
+				7E41A7668C688713E918EC74 /* Pods */,
+				1F03A12978D8BFB58036ABDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = NewTodayUITests;
 			sourceTree = "<group>";
 		};
+		7E41A7668C688713E918EC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6B0AA1C3D06E5DF3B1794 /* Pods-NewToday.debug.xcconfig */,
+				1688FE65555F696B625E3EA3 /* Pods-NewToday.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B9E7C931E4FFFAC0023AB36 /* Build configuration list for PBXNativeTarget "NewToday" */;
 			buildPhases = (
+				F4FE725128C26ED4D71D3B96 /* [CP] Check Pods Manifest.lock */,
 				6B9E7C671E4FFFAC0023AB36 /* Sources */,
 				6B9E7C681E4FFFAC0023AB36 /* Frameworks */,
 				6B9E7C691E4FFFAC0023AB36 /* Resources */,
+				B92FDAE4D5D411726DB2B3E8 /* [CP] Embed Pods Frameworks */,
+				F8A35281C1468790892F3E84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B92FDAE4D5D411726DB2B3E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewToday/Pods-NewToday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FE725128C26ED4D71D3B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A35281C1468790892F3E84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewToday/Pods-NewToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B9E7C671E4FFFAC0023AB36 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		6B9E7C941E4FFFAC0023AB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA6B0AA1C3D06E5DF3B1794 /* Pods-NewToday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BW3X4QNV6N;
@@ -424,6 +500,7 @@
 		};
 		6B9E7C951E4FFFAC0023AB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1688FE65555F696B625E3EA3 /* Pods-NewToday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BW3X4QNV6N;

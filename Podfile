@@ -15,5 +15,7 @@ pod 'RxSwift', '~> 3.0'
 pod 'DZNEmptyDataSet'
 pod 'FileKit', '~> 4.0.0'
 pod 'Kingfisher', '~> 3.0'
+pod 'ObjectMapper'
+pod 'Moya/RxSwift'
 
 end

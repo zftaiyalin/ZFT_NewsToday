@@ -9,14 +9,33 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // 创建 根控制器
+//        print(NSUserDefaults.standardUserDefaults().boolForKey(YMFirstLaunch))
+//        // 检测用户是不是第一次启动
+//        if !NSUserDefaults.standardUserDefaults().boolForKey(YMFirstLaunch) {
+//            // 是第一次启动
+//            window?.rootViewController = YMFirstIntroduceController()
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: YMFirstLaunch)
+//        } else {
+            let tabBarController = YMTabBarController()
+            tabBarController.delegate = self
+            window?.rootViewController = tabBarController
+//        }
+        window?.makeKeyAndVisible()
         return true
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        // 发出通知
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: YMTabBarDidSelectedNotification), object: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

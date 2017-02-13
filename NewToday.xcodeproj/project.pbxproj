@@ -21,6 +21,7 @@
 		6B9E7C791E4FFFAC0023AB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9E7C771E4FFFAC0023AB36 /* LaunchScreen.storyboard */; };
 		6B9E7C841E4FFFAC0023AB36 /* NewTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C831E4FFFAC0023AB36 /* NewTodayTests.swift */; };
 		6B9E7C8F1E4FFFAC0023AB36 /* NewTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C8E1E4FFFAC0023AB36 /* NewTodayUITests.swift */; };
+		6BE462B91E5202400095F666 /* NewTodayRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE462B81E5202400095F666 /* NewTodayRequestAPI.swift */; };
 		F54529C49DCB12FECE2DDC9F /* Pods_NewToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A3237DFB4C8F9F812FD282 /* Pods_NewToday.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		6B9E7C8A1E4FFFAC0023AB36 /* NewTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9E7C8E1E4FFFAC0023AB36 /* NewTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodayUITests.swift; sourceTree = "<group>"; };
 		6B9E7C901E4FFFAC0023AB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE462B81E5202400095F666 /* NewTodayRequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodayRequestAPI.swift; sourceTree = "<group>"; };
 		CEA6B0AA1C3D06E5DF3B1794 /* Pods-NewToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewToday/Pods-NewToday.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				6B524E911E51680E00EDEFBD /* YMConst.swift */,
+				6BE462B81E5202400095F666 /* NewTodayRequestAPI.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				6B524E921E51680E00EDEFBD /* YMConst.swift in Sources */,
 				6B524EA21E51691800EDEFBD /* YMMineViewController.swift in Sources */,
 				6B524E9C1E5168D000EDEFBD /* YMVideoViewController.swift in Sources */,
+				6BE462B91E5202400095F666 /* NewTodayRequestAPI.swift in Sources */,
 				6B524E8F1E5167D100EDEFBD /* YMTabBarController.swift in Sources */,
 				6B9E7C6F1E4FFFAC0023AB36 /* AppDelegate.swift in Sources */,
 				6B524E981E5168AA00EDEFBD /* YMHomeViewController.swift in Sources */,

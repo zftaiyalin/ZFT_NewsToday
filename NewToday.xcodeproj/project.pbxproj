@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B524E8F1E5167D100EDEFBD /* YMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524E8E1E5167D100EDEFBD /* YMTabBarController.swift */; };
+		6B524E921E51680E00EDEFBD /* YMConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524E911E51680E00EDEFBD /* YMConst.swift */; };
+		6B524E941E51684000EDEFBD /* YMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524E931E51684000EDEFBD /* YMNavigationController.swift */; };
+		6B524E981E5168AA00EDEFBD /* YMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524E971E5168AA00EDEFBD /* YMHomeViewController.swift */; };
+		6B524E9C1E5168D000EDEFBD /* YMVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524E9B1E5168D000EDEFBD /* YMVideoViewController.swift */; };
+		6B524EA21E51691800EDEFBD /* YMMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524EA11E51691800EDEFBD /* YMMineViewController.swift */; };
+		6B524EA41E51693100EDEFBD /* YMNewCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B524EA31E51693100EDEFBD /* YMNewCareViewController.swift */; };
 		6B9E7C6F1E4FFFAC0023AB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C6E1E4FFFAC0023AB36 /* AppDelegate.swift */; };
 		6B9E7C711E4FFFAC0023AB36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9E7C701E4FFFAC0023AB36 /* ViewController.swift */; };
 		6B9E7C741E4FFFAC0023AB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9E7C721E4FFFAC0023AB36 /* Main.storyboard */; };
@@ -37,6 +44,13 @@
 /* Begin PBXFileReference section */
 		1688FE65555F696B625E3EA3 /* Pods-NewToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewToday/Pods-NewToday.release.xcconfig"; sourceTree = "<group>"; };
 		47A3237DFB4C8F9F812FD282 /* Pods_NewToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B524E8E1E5167D100EDEFBD /* YMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTabBarController.swift; sourceTree = "<group>"; };
+		6B524E911E51680E00EDEFBD /* YMConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMConst.swift; sourceTree = "<group>"; };
+		6B524E931E51684000EDEFBD /* YMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNavigationController.swift; sourceTree = "<group>"; };
+		6B524E971E5168AA00EDEFBD /* YMHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMHomeViewController.swift; sourceTree = "<group>"; };
+		6B524E9B1E5168D000EDEFBD /* YMVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMVideoViewController.swift; sourceTree = "<group>"; };
+		6B524EA11E51691800EDEFBD /* YMMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMMineViewController.swift; sourceTree = "<group>"; };
+		6B524EA31E51693100EDEFBD /* YMNewCareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNewCareViewController.swift; sourceTree = "<group>"; };
 		6B9E7C6B1E4FFFAC0023AB36 /* NewToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9E7C6E1E4FFFAC0023AB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B9E7C701E4FFFAC0023AB36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +101,96 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B524E8C1E51679700EDEFBD /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E901E5167FA00EDEFBD /* Tools */,
+				6B524E8D1E51679C00EDEFBD /* Controller */,
+			);
+			name = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		6B524E8D1E51679C00EDEFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E8E1E5167D100EDEFBD /* YMTabBarController.swift */,
+				6B524E931E51684000EDEFBD /* YMNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6B524E901E5167FA00EDEFBD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E911E51680E00EDEFBD /* YMConst.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		6B524E951E51688700EDEFBD /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E961E51689000EDEFBD /* Controller */,
+			);
+			name = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		6B524E961E51689000EDEFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E971E5168AA00EDEFBD /* YMHomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6B524E991E5168B600EDEFBD /* Video(视频) */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E9A1E5168BC00EDEFBD /* Controller */,
+			);
+			name = "Video(视频)";
+			sourceTree = "<group>";
+		};
+		6B524E9A1E5168BC00EDEFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E9B1E5168D000EDEFBD /* YMVideoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6B524E9D1E5168ED00EDEFBD /* NewCare(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				6B524E9E1E5168FA00EDEFBD /* Controller */,
+			);
+			name = "NewCare(关注)";
+			sourceTree = "<group>";
+		};
+		6B524E9E1E5168FA00EDEFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B524EA31E51693100EDEFBD /* YMNewCareViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6B524E9F1E51690200EDEFBD /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				6B524EA01E51690900EDEFBD /* Controller */,
+			);
+			name = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		6B524EA01E51690900EDEFBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B524EA11E51691800EDEFBD /* YMMineViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		6B9E7C621E4FFFAC0023AB36 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +216,11 @@
 		6B9E7C6D1E4FFFAC0023AB36 /* NewToday */ = {
 			isa = PBXGroup;
 			children = (
+				6B524E9F1E51690200EDEFBD /* Mine(我的) */,
+				6B524E9D1E5168ED00EDEFBD /* NewCare(关注) */,
+				6B524E991E5168B600EDEFBD /* Video(视频) */,
+				6B524E951E51688700EDEFBD /* Home(首页) */,
+				6B524E8C1E51679700EDEFBD /* Main(主要) */,
 				6B9E7C6E1E4FFFAC0023AB36 /* AppDelegate.swift */,
 				6B9E7C701E4FFFAC0023AB36 /* ViewController.swift */,
 				6B9E7C721E4FFFAC0023AB36 /* Main.storyboard */,
@@ -335,8 +444,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B524E941E51684000EDEFBD /* YMNavigationController.swift in Sources */,
 				6B9E7C711E4FFFAC0023AB36 /* ViewController.swift in Sources */,
+				6B524E921E51680E00EDEFBD /* YMConst.swift in Sources */,
+				6B524EA21E51691800EDEFBD /* YMMineViewController.swift in Sources */,
+				6B524E9C1E5168D000EDEFBD /* YMVideoViewController.swift in Sources */,
+				6B524E8F1E5167D100EDEFBD /* YMTabBarController.swift in Sources */,
 				6B9E7C6F1E4FFFAC0023AB36 /* AppDelegate.swift in Sources */,
+				6B524E981E5168AA00EDEFBD /* YMHomeViewController.swift in Sources */,
+				6B524EA41E51693100EDEFBD /* YMNewCareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +701,7 @@
 				6B9E7C951E4FFFAC0023AB36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B9E7C961E4FFFAC0023AB36 /* Build configuration list for PBXNativeTarget "NewTodayTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +710,7 @@
 				6B9E7C981E4FFFAC0023AB36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B9E7C991E4FFFAC0023AB36 /* Build configuration list for PBXNativeTarget "NewTodayUITests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +719,7 @@
 				6B9E7C9B1E4FFFAC0023AB36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -133,6 +133,8 @@
 		6B524E951E51688700EDEFBD /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				6BFBD5471E5A8945006C470E /* Model */,
+				6BFBD5461E5A893A006C470E /* viewModel */,
 				6B524E961E51689000EDEFBD /* Controller */,
 			);
 			name = "Home(首页)";
@@ -250,6 +252,20 @@
 				6B9E7C901E4FFFAC0023AB36 /* Info.plist */,
 			);
 			path = NewTodayUITests;
+			sourceTree = "<group>";
+		};
+		6BFBD5461E5A893A006C470E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewModel;
+			sourceTree = "<group>";
+		};
+		6BFBD5471E5A8945006C470E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		7E41A7668C688713E918EC74 /* Pods */ = {

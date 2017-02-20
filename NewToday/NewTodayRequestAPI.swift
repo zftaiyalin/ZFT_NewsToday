@@ -19,6 +19,7 @@ extension NewTodayRequestAPI: TargetType {
     /// The method used for parameter encoding.
     public var parameterEncoding: ParameterEncoding {
         return self.parameterEncoding
+        
     }
 
     var baseURL: URL {

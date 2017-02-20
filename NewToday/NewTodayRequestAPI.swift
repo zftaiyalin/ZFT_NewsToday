@@ -11,25 +11,30 @@ import RxSwift
 import Moya
 
 enum NewTodayRequestAPI {
-    case Show
+    case loadArticleRefreshTip
     case Create(title: String, body: String, userId: Int)
 }
 
 extension NewTodayRequestAPI: TargetType {
     /// The method used for parameter encoding.
     public var parameterEncoding: ParameterEncoding {
-        return self.parameterEncoding
-        
+        return JSONEncoding.default
     }
 
+    /// The method used for parameter encoding.
+//    public var parameterEncoding: ParameterEncoding {
+//        return self.parameterEncoding
+//        
+//    }
+
     var baseURL: URL {
-        return URL(string: "http://jsonplaceholder.typicode.com")!
+        return URL(string: "http://lf.snssdk.com/")!
     }
     
     var path: String {
         switch self {
-        case .Show:
-            return "/posts"
+        case .loadArticleRefreshTip:
+            return "2/article/v39/refresh_tip/"
         case .Create(_, _, _):
             return "/posts"
         }
@@ -37,7 +42,7 @@ extension NewTodayRequestAPI: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .Show:
+        case .loadArticleRefreshTip:
             return .get
         case .Create(_, _, _):
             return .post
@@ -46,7 +51,7 @@ extension NewTodayRequestAPI: TargetType {
     
     var parameters: [String: Any]? {
         switch self {
-        case .Show:
+        case .loadArticleRefreshTip:
             return nil
         case .Create(let title, let body, let userId):
             return ["title": title, "body": body, "userId": userId]
@@ -55,8 +60,8 @@ extension NewTodayRequestAPI: TargetType {
     
     var sampleData: Data {
         switch self {
-        case .Show:
-            return "[{\"userId\": \"1\", \"Title\": \"Title String\", \"Body\": \"Body String\"}]".data(using: String.Encoding.utf8)!
+        case .loadArticleRefreshTip:
+            return "Create get successfully".data(using: String.Encoding.utf8)!
         case .Create(_, _, _):
             return "Create post successfully".data(using: String.Encoding.utf8)!
         }

@@ -25,12 +25,17 @@ extension Observable {
     
     func mapArray<T: Mappable>(type: T.Type) -> Observable<[T]> {
         return self.map { response in
-
-            guard let array = response as? [Any] else {
+            //if response is an array of dictionaries, then use ObjectMapper to map the dictionary
+            //if not, throw an error
+            guard let dict = response as? [String: Any] else {
                 throw RxSwiftMoyaError.ParseJSONError
             }
             
-            guard let dicts = array as? [[String: Any]] else {
+            let data = dict["data"] as! [String : Any]
+            
+            let dataArray = data["data"] as! [Any]
+    
+            guard let dicts = dataArray as? [[String: Any]] else {
                 throw RxSwiftMoyaError.ParseJSONError
             }
             

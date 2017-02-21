@@ -17,6 +17,16 @@ class YMHomeViewModel {
         return provider.request(.loadArticleRefreshTip)
                 .filterSuccessfulStatusCodes()
                 .mapJSON()
+                .debug()
                 .mapObject(type: RefreshTipModel.self)
     }
+    
+    func getloadHomeTitlesData(device_id: String, aid: Int, iid: String) -> Observable<[YMHomeTopTitleModel]> {
+        return provider.request(.loadHomeTitlesData(device_id: device_id, aid: aid, iid: iid))
+            .filterSuccessfulStatusCodes()
+            .mapJSON()
+            .debug()
+            .mapArray(type: YMHomeTopTitleModel.self)
+    }
+
 }

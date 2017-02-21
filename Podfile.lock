@@ -19,6 +19,8 @@ PODS:
   - RealmSwift (2.4.2):
     - Realm (= 2.4.2)
   - Result (3.1.0)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
   - RxSwift (3.2.0)
   - SnapKit (3.1.2)
   - SwiftyJSON (3.1.4)
@@ -34,6 +36,7 @@ DEPENDENCIES:
   - Moya/RxSwift
   - ObjectMapper
   - RealmSwift
+  - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit (~> 3.1.2)
   - SwiftyJSON (~> 3.1.4)
@@ -49,10 +52,11 @@ SPEC CHECKSUMS:
   Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
   RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f6402bfa47c6a2487e7edbe2841e31088642667a
+PODFILE CHECKSUM: d8f1101b61d1363213e79c486ab85b375c98f11f
 
 COCOAPODS: 1.2.0

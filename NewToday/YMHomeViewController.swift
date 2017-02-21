@@ -16,9 +16,9 @@ class YMHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-3
         // Do any additional setup after loading the view.
-        
+        setupUI()
+        // 有多少条文章更新
         viewModel.getLoadArticleRefreshTip()
             .subscribe(onNext: { (RefreshTip: RefreshTipModel) in
                 //do something with posts
@@ -49,10 +49,20 @@ class YMHomeViewController: UIViewController {
         automaticallyAdjustsScrollViewInsets = false
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.barTintColor = YMColor(r: 210, g: 63, b: 66, a: 1.0)
-        
-//        navigationItem.titleView = tit
-        
+        // 设置 titleView
+        navigationItem.titleView = titleView
+        // 添加滚动视图
+        view.addSubview(scrollView)
     }
+    
+    /// 滚动视图
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.frame = UIScreen.main.bounds
+        scrollView.isPagingEnabled = true
+//        scrollView.delegate = self
+        return scrollView
+    }()
 
     /// 每次刷新显示的提示标题
     
@@ -62,6 +72,12 @@ class YMHomeViewController: UIViewController {
         // 加载 navBar 上面，不会随着 tableView 一起滚动
         self.navigationController?.navigationBar.insertSubview(tipView, at: 0)
         return tipView
+    }()
+    
+    /// 顶部标题
+    private lazy var titleView: YMScrollTitleView = {
+        let titleView = YMScrollTitleView()
+        return titleView
     }()
     
     override func didReceiveMemoryWarning() {
